@@ -1,7 +1,7 @@
 ## **42 Piscine_Porto**
 
 <p align="center" >
-		<img alt='42' src='42Banner.png'/>
+		<img alt='42' src='Others/42Banner.png'/>
 </p>
 
 ## About
