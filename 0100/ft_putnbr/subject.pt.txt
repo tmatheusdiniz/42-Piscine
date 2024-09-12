@@ -1,9 +1,0 @@
-Escreva uma função que mostre um número, passado como parâmetro. A função
-deverá ser capaz de representar todos os valores possíveis de uma variável do tipo
-int.
-
-• Deve ser prototipada da seguinte maneira:
-void ft_putnbr(int nb);
-
-• Por exemplo:
-◦ ft_putnbr(42) mostra "42".
