@@ -1,22 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft.h                                               :+:      :+:    :+:   */
+/*   ft_ten_queens_puzzle.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mreinald <mreinald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/18 00:02:32 by mreinald          #+#    #+#             */
-/*   Updated: 2024/09/12 14:56:32 by mreinald         ###   ########.fr       */
+/*   Created: 2024/09/03 14:56:51 by mreinald          #+#    #+#             */
+/*   Updated: 2024/09/03 18:46:39 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_H
-# define FT_H
+#include <unistd.h>
 
-void	ft_putchar(char c);
-void	ft_swap(int *a, int *b);
-void	ft_putstr(char *str);
-void	ft_strlen(char *str);
-void	ft_strcmp(char *s1, char *s2);
+int	ft_teen_queens_puzzle(void)
+{
+	int queens[10];
+	int solutions;
 
-#endif
+	solutions = 0;
+
+	ft_teen_queens_puzzle_recursive(queens, 0, &solutions);
+	return (solutions);
+}
+
+#include <stdio.h>
+
+int	main(void)
+{
+	printf(" Number solutions: %d", ft_teen_queens_puzzle());
+	return (0);
+}

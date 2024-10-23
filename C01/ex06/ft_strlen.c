@@ -14,28 +14,28 @@
 
 int	ft_strlen(char *str)
 {
-	int	soma;
+	int	sum;
 
-	soma = 0;
+	sum = 0;
 	while (*str)
 	{
 		if (*str != ' ')
 		{
-			soma += 1;
+			sum += 1;
 		}
 		str ++;
 	}
-	return (soma);
+	return (sum);
 }
 
 /*int	main(void)
 {
-	char	strin[20];
-	int		soma;
+	char	str[20];
+	int		sum;
 
-	strcpy(strin, "abcdefghijk");
-	soma = ft_strlen(strin);
-	printf("%d\n", soma);
+	strcpy(str, "abcdefghijk");
+	sum = ft_strlen(str);
+	printf("%d\n", sum);
 	return (0);
 }
 */

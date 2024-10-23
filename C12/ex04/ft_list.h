@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft.h                                               :+:      :+:    :+:   */
+/*   ft_list.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mreinald <mreinald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/18 00:02:32 by mreinald          #+#    #+#             */
-/*   Updated: 2024/09/12 14:56:32 by mreinald         ###   ########.fr       */
+/*   Created: 2024/09/10 19:35:29 by mreinald          #+#    #+#             */
+/*   Updated: 2024/09/10 21:15:37 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_H
-# define FT_H
+#ifndef FT_LIST_H
+#define FT_LIST_H
 
-void	ft_putchar(char c);
-void	ft_swap(int *a, int *b);
-void	ft_putstr(char *str);
-void	ft_strlen(char *str);
-void	ft_strcmp(char *s1, char *s2);
+typedef struct  s_list
+{
+    struct s_list   *next;
+    void    *data;
+}   t_list;
+
+t_list  *ft_create_elem(void *data);
 
 #endif

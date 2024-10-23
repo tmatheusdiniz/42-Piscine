@@ -1,22 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft.h                                               :+:      :+:    :+:   */
+/*   ft_print_memory.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mreinald <mreinald@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/18 00:02:32 by mreinald          #+#    #+#             */
-/*   Updated: 2024/09/12 14:56:32 by mreinald         ###   ########.fr       */
+/*   Created: 2024/09/21 20:44:16 by mreinald          #+#    #+#             */
+/*   Updated: 2024/09/21 21:03:24 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_H
-# define FT_H
+int	ft_strlen(char *str)
+{
+	int	i;
 
-void	ft_putchar(char c);
-void	ft_swap(int *a, int *b);
-void	ft_putstr(char *str);
-void	ft_strlen(char *str);
-void	ft_strcmp(char *s1, char *s2);
+	i = 0;
+	while (*str)
+		i ++;
+	return (i);
+}
 
-#endif
+void	print_offset(int n, int i)
+{
+	
+}
+
+void	*ft_print_memory(void *addr, unsigned int size)
+{
+	int i;
+
+	i = 0;
+	while (i < size)
+	{
+		
+	}
+}
+
+int	main(int c, char **v)
+{
+	int i;
+
+	if (c < 2 || c > 2)
+		return (0);
+	else
+	{
+		ft_print_memory(v[1], ft_strlen(v[1]));
+	}
+}
