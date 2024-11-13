@@ -10,13 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
-
 int	max(int *tab, unsigned int len)
 {
-	unsigned int i;
-	int save;
+	int				save;
+	unsigned int	i;
 
 	i = 1;
 	if (len == 0)
@@ -26,13 +23,15 @@ int	max(int *tab, unsigned int len)
 	{
 		if (tab[i] > save)
 		{
-			save = 	tab[i];
+			save = tab[i];
 		}
 		i ++;
 	}
 	return (save);
 }
 /*
+#include <stdio.h>
+#include <stdlib.h>
 int	main(void)
 {
 	int *ptr;
