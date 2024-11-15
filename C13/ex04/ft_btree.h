@@ -23,4 +23,7 @@ typedef struct s_btree
 	void			*item;
 }					t_btree;
 
+t_btree *btree_create_node(void *item);
+void btree_apply_prefix(t_btree *root, void (*applyf)(void *));
+
 #endif

@@ -1,26 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_btree.h                                         :+:      :+:    :+:   */
+/*   btree_level_count.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mreinald <mreinald@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/11 15:08:50 by mreinald          #+#    #+#             */
-/*   Updated: 2024/11/11 15:16:03 by mreinald         ###   ########.fr       */
+/*   Created: 2024/11/15 13:06:49 by mreinald          #+#    #+#             */
+/*   Updated: 2024/11/15 13:22:51 by mreinald         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_BTREE_H
-# define FT_BTREE_H
+#include "ft_btree.h"
 
-# include <stdlib.h>
-# include <stdio.h>
-
-typedef struct s_btree
+int	btree_level_count(t_btree *root)
 {
-	struct s_btree	*left;
-	struct s_btree	*right;
-	void			*item;
-}					t_btree;
+	int count_l;
+	int	count_r;
 
-#endif
+	count_l = 0;
+	count_r = 0;
+	if (!root)
+		return (0);
+	count_l = btree_level_count(root->left);
+	count_r = btree_level_count(root->right);
+	if (count_l > count_r)
+		return (count_l + 1);
+	else
+		return (count_r + 1);
+}
