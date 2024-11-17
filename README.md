@@ -13,6 +13,8 @@
 >
 > If you use the code, use them to learn.
 > 
+> ⚠️ **From C08/ex05 onwards, no exercise passed through the norminette and moulinette.**
+>
 > Don't cheat! ⛔
 
 
