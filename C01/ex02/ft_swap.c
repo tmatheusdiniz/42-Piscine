@@ -11,21 +11,29 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdio.h>
 
+/*
+this is an alternative way that to resolve this problem!
+I did use "XOR" for three times, and it's give me a "bit a bit" exchange.
+*/
 void	ft_swap(int *a, int *b)
 {
-	(*a) = 42;
-	(*b) = 42;
+	*a = (*a)^(*b);
+	*b = (*a)^(*b);
+	*a = (*a)^(*b);
 }
 
-/*int	main(void)
+/*
+int	main(void)
 {
 	int	a;
 	int	b;
 
 	a = 10;
 	b = 15;
+	printf("before : %d, %d\n", a, b);
 	ft_swap(&a, &b);
-	printf("%d %d\n", a, b);
+	printf("after : %d, %d\n", a, b);
 }
 */
