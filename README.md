@@ -48,11 +48,11 @@
 > <b><i>In the last exam, each question is worth 6 points and in the others, 10.</i></b><br>
 >
 > This repository contains code developed at 42 Piscine, from 29/07/2024 to 23/08/2024 #10 42Porto 🏊‍♂️
->
-> If you use the code, use them to learn.
 > 
 > ⚠️ **From C08/ex05 onwards, no exercise passed through the norminette and moulinette.**
 >
+> If you use the code, use them to learn.
+> 
 > Don't cheat! ⛔
 
 
