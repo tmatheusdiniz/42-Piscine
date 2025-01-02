@@ -89,7 +89,7 @@ char	*search_item(hash *elem, char *key)
 void show_menu() 
 {
 	printf("==================================\n");
-	printf("        Mini Tela Interativa      \n");
+	printf("         mini interactive screen.      \n");
 	printf("==================================\n");
 	printf("1. Insert element\n");
 	printf("2. Search element\n");
